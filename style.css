@@ -1,0 +1,20 @@
+body {
+  background-color: #1a1a1a;
+}
+
+.jumbotron {
+  padding-top: 2rem;
+  background-color: #f5b301;
+}
+
+#Karya {
+  background-color: #f5b301;
+}
+
+#Kontak {
+  background-color: #f5b301;
+}
+
+section {
+  padding-top: 6rem;
+}
