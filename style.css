@@ -1,20 +1,28 @@
 body {
-  background-color: #1a1a1a;
+  background-color: #d21242;
 }
 
 .jumbotron {
-  padding-top: 2rem;
-  background-color: #f5b301;
+  padding-top: 20rem;
+  padding-bottom: 20rem;
 }
 
-#Karya {
-  background-color: #f5b301;
+.jumbotron h1 {
+  color: #fff;
 }
 
-#Kontak {
-  background-color: #f5b301;
+.jumbotron p {
+  color: #fff;
+}
+
+#sa121 {
+  background-color: #fff;
 }
 
 section {
   padding-top: 6rem;
+}
+
+.berita {
+  padding-bottom: 20rem;
 }

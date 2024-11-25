@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Animasi Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Berita PGSD 21</title>
+  </head>
+  <body>
+    <!-- Awal Navbar -->
+    <div class="collapse fixed-top shadow" id="navbarToggleExternalContent">
+      <div class="p-4" style="background-color: #ffff">
+        <h5 class="text-dark h4">Berita Harian Bu Haji Warga RT. 021</h5>
+        <div class="container">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#Jumbotron">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="sa121.html">Kelas SA-121</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="sa221.html">Kelas SA-221</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <nav
+      class="navbar fixed-top navbar-light"
+      style="background-color: #d21242"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          data-aos="fade-right"
+          data-aos-duration="200"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Awal Jumbotron -->
+    <section id="Jumbotron" class="jumbotron text-center">
+      <br />
+      <h1 class="fw-medium" data-aos="fade-up" data-aos-delay="100">
+        Berita Harian Bu Haji Warga RT. 021
+      </h1>
+      <p class="lead"></p>
+      <br />
+      <div class="dropdown" data-aos="fade-up" data-aos-delay="1000">
+        <a
+          class="btn btn-secondary dropdown-toggle"
+          href="#"
+          role="button"
+          id="dropdownMenuLink"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Kunjungi Halaman
+        </a>
+
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <li><a class="dropdown-item" href="sa121.html">SA-121</a></li>
+          <li><a class="dropdown-item" href="sa221.html">SA-221</a></li>
+        </ul>
+      </div>
+    </section>
+    <!-- Akhir Jumbotron -->
+
+    <!-- Bootstrap Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Gsap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+
+    <script>
+      gsap.to(".lead", {
+        duration: 5,
+        delay: 0.5,
+        text: "| Terpercaya, Terupdate, Terbagus, Termantap mentongs |",
+      });
+    </script>
+
+    <!-- Animasi Scroll Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Navbar Close One Click -->
+    <script>
+      const navLinks = document.querySelectorAll(".nav-item");
+      const menuToggle = document.getElementById("navbarToggleExternalContent");
+      const bsCollapse = new bootstrap.Collapse(menuToggle, { toggle: false });
+      navLinks.forEach((l) => {
+        l.addEventListener("click", () => {
+          bsCollapse.toggle();
+        });
+      });
+    </script>
+  </body>
+</html>
